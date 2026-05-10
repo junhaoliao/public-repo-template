@@ -44,6 +44,8 @@ def fail(errors: str | list[str]) -> None:
 
     for error in errors:
         print(f"::error::{error}")  # noqa: T201
+
+    print(f"::error::Please fill out the PR template: {TEMPLATE_PATH}")
     sys.exit(1)
 
 
